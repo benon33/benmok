@@ -1,7 +1,6 @@
 theme: jekyll-theme-midnight
 title: Benjamin Mok
-email: benjmok@gmail.com
-description: UC Davis
+description: benjmok@gmail.com
 markdown: kramdown
 kramdown:
    auto_ids: true
