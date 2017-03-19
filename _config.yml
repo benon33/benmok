@@ -1,4 +1,7 @@
 theme: jekyll-theme-midnight
 title: Benjamin Mok
 description: benjmok@gmail.com
+markdown: kramdown
+kramdown:
+   auto_ids: true
 
