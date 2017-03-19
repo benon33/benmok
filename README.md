@@ -5,3 +5,8 @@
 
 
 [Natural Language Processing: News Articles!](https://benon33.github.io/benmok/Assignment5/)
+
+[Shrodinger's Cat... picture](https://benon33.github.io/benmok/Assignment2/)
+
+[Nutrition Analysis](https://benon33.github.io/benmok/Assignment4/)
+
