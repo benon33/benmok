@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
-    <img src="galaxy1.jpg" alt="Galaxy View" style="width:304px;height:228px;">
+    <div class = 'banner'>
+      <img class = 'banner-image' src = 'img/gallaxy1.jpg'>
+    </div>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
@@ -28,7 +30,6 @@
           {% endif %}
         </nav>
       </div><!-- end header -->
-
     <div class="wrapper">
 
       <section>
