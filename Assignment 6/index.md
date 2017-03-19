@@ -21,79 +21,6 @@ Shapefiles for US postal codes are available [here](https://www.census.gov/geo/m
 
 Shapefiles for San Francisco Neighborhoods are available [here](https://data.sfgov.org/Geographic-Locations-and-Boundaries/SF-Find-Neighborhoods/pty2-tcw4).
 
-
-```python
-pd.read_sql('SELECT * FROM zillow LIMIT 5', sfdb)
-```
-
-
-
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>RegionName</th>
-      <th>Date</th>
-      <th>ZriPerSqft_AllHomes</th>
-      <th>MedianSoldPricePerSqft_AllHomes</th>
-      <th>PriceToRentRatio_AllHomes</th>
-      <th>Turnover_AllHomes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>94109</td>
-      <td>2010-11-01 00:00:00</td>
-      <td>3.156</td>
-      <td>675.1913</td>
-      <td>19.14</td>
-      <td>6.0771</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>94110</td>
-      <td>2010-11-01 00:00:00</td>
-      <td>2.566</td>
-      <td>599.6785</td>
-      <td>18.10</td>
-      <td>5.4490</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>94122</td>
-      <td>2010-11-01 00:00:00</td>
-      <td>2.168</td>
-      <td>495.4432</td>
-      <td>17.99</td>
-      <td>2.4198</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>94080</td>
-      <td>2010-11-01 00:00:00</td>
-      <td>1.666</td>
-      <td>369.5538</td>
-      <td>18.31</td>
-      <td>3.8757</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>94112</td>
-      <td>2010-11-01 00:00:00</td>
-      <td>2.322</td>
-      <td>422.4538</td>
-      <td>14.44</td>
-      <td>3.1288</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 ### NOTE: I deleted a lot of cells due to redundancy for when I looked at the correct column names for each df etc...
 
 __Exercise 1.1.__ Which mobile food vendor(s) sells at the most locations?
@@ -202,160 +129,6 @@ zipprice['RegionName'] = zipprice['RegionName'].astype(str)
 
 
 ```python
-zipprice
-```
-
-
-
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>RegionName</th>
-      <th>AverageHomePrice</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>94080</td>
-      <td>375.629802</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>94102</td>
-      <td>626.417276</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>94103</td>
-      <td>604.009929</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>94104</td>
-      <td>1336.128581</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>94105</td>
-      <td>798.257824</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>94107</td>
-      <td>592.651062</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>94108</td>
-      <td>501.013201</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>94109</td>
-      <td>618.325709</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>94110</td>
-      <td>543.998864</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>94111</td>
-      <td>445.680441</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>94112</td>
-      <td>416.744886</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>94114</td>
-      <td>650.127729</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>94115</td>
-      <td>611.771452</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>94116</td>
-      <td>466.570200</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>94117</td>
-      <td>580.217632</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>94118</td>
-      <td>558.667047</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>94121</td>
-      <td>467.890585</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>94122</td>
-      <td>453.210167</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>94123</td>
-      <td>696.166788</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>94124</td>
-      <td>297.008046</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>94127</td>
-      <td>490.745386</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>94131</td>
-      <td>560.122866</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>94132</td>
-      <td>385.384982</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>94133</td>
-      <td>638.636839</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>94134</td>
-      <td>347.027455</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>94158</td>
-      <td>657.211820</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
 '''
 Here I first create a map using matplotlib.Basemap of 
 San Francisco. I draw the mapboundary as well as the 
@@ -400,7 +173,7 @@ plt.show()
 ```
 
 
-![png](output_14_0.png)
+![png](output_12_0.png)
 
 
 By using the sql database, I was able to retrieve data on the average price of homes in San Francisco.  With this data, I averaged all the price per square foot of homes in each unique zip-code in San Francisco. I then found that __94158__ has the most expensive homes at __`$`1336.12 per SQFT__. This region San Francisco is known as  "down town" right next to _AT&T park_ where the SF Giants play, which explains the reason for its outrageously expensive housing prices. I created a map using _Basemap_ from _matplotlib_ that accurately and beautifully displays the information about housing prices in San Francisco. It is interesting to note that __94158__ is the only place where housing prices are above 1000 dollars. Though there are other areas with expensive housing prices like, __94105__ which is in between South Beach and the Financial District, at __`$`798.25__. Also, the area with the lowest housing prices is __94124__ at __`$`297__. This area is known as __Hunter's Point__, which is an area famous for having bad housing infrastructure, high pollution, high unemployment and crime rates. 
@@ -546,7 +319,19 @@ plt.show()
 ```
 
 
-![png](output_20_0.png)
+![png](output_18_0.png)
+
+
+
+```python
+sizes
+```
+
+
+
+
+    [101655, 109242, 89044, 136216, 124365, 60974, 56258, 196178, 75459, 84009]
+
 
 
 In order to view which district has the highest crime rates I created a _pie chart_ to accurately view the distribution of crime rates.  There is a lot of information that comes out of this, we can see that the __Southern__ district, __Mission__ district and __Northern__ district have the highest distribution of crime in San Francisco at __19%, 13.2% and 12%__ respectively. Those this is an accurate representation of the distributionof total crime rates in each district, this chart does not account for the total population of the different districts. Thus, surely there would be more occurences of crimes if the population in the respective district is high. Because of this, I decided to use a pie chart to analyze Tenderloin's crime type distribution.
@@ -573,7 +358,7 @@ tendy = tenderloinbaby.groupby('Category').count()
 labelc = list(tendy[tendy['Descript'] > 500].index)
 sizes = list(tendy[tendy['Descript'] > 500]['Descript'])
 plt.pie(sizes, labels=labelc,
-        autopct='%1.1f%%',colors =rcol(len(sizes)) , shadow=True, startangle=140)
+        autopct='%1.1f%%',colors =rcol(len(sizes)), shadow=True, startangle=140)
 
 plt.title('Crime Rates in TENDERLOIN!', y=1.1)
 plt.axis('equal')
@@ -582,7 +367,7 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
+![png](output_21_0.png)
 
 
 Now I was really interested in analyzing the Tenderloin because of personally experiences (robbery was attempted on me but they weren't ready for me...), and also its prestige as being one of the most "ghetto" and crime ridden places in the country, notorius for its drug crimes and theft. Thus, I found that __larcency/theft__, __drug__ and __assualt__ issues are the most reported cases in the Tenderloin at __15%, 15.1% and 10.8%__ respectively.  It is also to note that __13%__ of the crimes reported were non-criminal, where as __15.1%__ (a very large chunk) of reports were "other offenses"   
@@ -641,14 +426,14 @@ ax.add_collection(pc)
 mapper = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
 mapper.set_array(df_poly2['countnoise'])
 plt.colorbar(mapper, shrink=0.4)
-plt.legend(schoolmap.plot(1, 'ro',label = 'Mobile Food Vendor', markersize = 3),'Moblile Food Vendor', loc = 'lower right')
+plt.legend(schoolmap.plot(1, 'ro',label = 'Mobile Food Vendor', markersize = 3), 'Mobile Food Vendor', loc = 'lower right')
 plt.title('Noise Complaints in San Francisco')
 
 plt.show()
 ```
 
 
-![png](output_26_0.png)
+![png](output_25_0.png)
 
 
 Much like the first city map I created of San Francisco, I created this using Basemap. I then drew the boundaries of each _Neighborhood_ onto the map of San Francisco and colored it in by the number of _Noise Complaints_ seen in the blue shades. I then plotted each location of mobile food vendors across the map. I wanted to figure out if there was a correlation between the amount of noise complaint occurences and the amount of food vendors in a given area.  I found that most of the concentration of noise complaints happen where mobile food vendors are present.  Thus, there is a possibility that mobile food vendors increase the amount of noise complaints, as they bring along a mass of people during busy hours. However, the area with high noise complaints could also be an effect of the area being in down town San Francisco, where it is always hustlin' and bustlin'. I mention this because there are areas across the city with relatively high amounts of food vendors but with otherwise low amounts of noise complaints.  
@@ -704,7 +489,7 @@ plt.show()
 ```
 
 
-![png](output_30_0.png)
+![png](output_29_0.png)
 
 
 I wanted to answer the question as to which time ranges do mobile food vendors operate on the most. To do so, I created a __bar chart__ with the number of mobile food vendors on the y-axis and the top ten time ranges (as military time) on the x-axis.  Note that I did not group the data by the day of the week, this is to show the overall time occcurences disregarding the fact that a day may be a weekend or not; I wanted the overall counts. With this, I find out that the top hours of operations are __9am to 10am__ at __534__ mobile food vendors operating at that time. The next time range with the most vendors operating are, __10am to 11am__. This is interesting to note, because it shows that the food trucks want to maximize their profits by only operating at times where demand for food is very high, such as breakfast and brunch times (9am-11am).  However, I was surprised to see that lunch times are not in the top 10 most operated times. 
@@ -728,7 +513,7 @@ plt.show()
 ```
 
 
-![png](output_32_0.png)
+![png](output_31_0.png)
 
 
 I added this bar chart to show the time ranges with the least food truck operations. This is minutely flawed, in that it does not show the number of operating vendors during any given hour, only the time ranges. But it could be a decent indication for someone looking to get a late night snack (and who would likely be discouraged due to lack of mobile food vendors at late times). 
@@ -885,7 +670,7 @@ plt.show()
 ```
 
 
-![png](output_36_0.png)
+![png](output_35_0.png)
 
 
 For this question I wanted to find the different types of schools around San Francisco, as well as their location.
