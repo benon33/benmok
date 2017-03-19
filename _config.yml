@@ -1,6 +1,6 @@
-theme: jekyll-theme-cayman
 title: Benjamin Mok
 markdown: kramdown
 kramdown:
    auto_ids: true
+theme: jekyll-theme-cayman
 
