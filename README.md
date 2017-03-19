@@ -1,4 +1,4 @@
 # About Me
 
 
-[San Francisco Community Analysis](benon33.github.io/benmok/Assignment 6/)
+[San Francisco Community Analysis](benon33.github.io/benmok/Assignment%206/)
