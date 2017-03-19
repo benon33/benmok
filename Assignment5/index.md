@@ -1,5 +1,5 @@
 
-# Assignment 5
+# News Articles, how are they alike?
 
 In this assignment, you'll scrape text from [The California Aggie](https://theaggie.org/) and then analyze the text.
 
