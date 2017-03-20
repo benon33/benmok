@@ -1,7 +1,3 @@
-# About Me
-
-Hello everyone, my name is Ben. I am currently a 4th year Statistics major Economics Minor at UC Davis. I love how powerful and flexible data science can be, and am definitely a firm believer in it! My main interests in data science include: making visual representations of data, webscraping and currently learning Python's Tensor Flow module. I hope to use my technical skills for a future career in consulting, but I like to stay open to anything or any opportunity that comes my way! My hobbies include, camping, boxing, wrestling, and photography. Please email me at [benjmok@gmail.com](benjmok@gmail.com) if you have any questions. Thank you for visiting my website!
-
 ## Projects!
 
 ### [San Francisco Community Analysis](https://benon33.github.io/benmok/Assignment%206/)
