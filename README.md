@@ -1,5 +1,3 @@
-## About Me  
-
 ![lit](https://benon33.github.io/benmok/assets/css/me1.jpg)
 
 Hello everyone, my name is Ben. I am currently a 4th year Statistics major Economics Minor at UC Davis. Yes, I am graduating soon and I am very excited! I am a firm believer in data science and I love how powerful and flexible data science can be. My main interests in data science include: making visual representations of data, webscraping and currently teaching myself how to train a neural network. I hope to make use of my technical skills for a future career in consulting but I like to stay open to anything or any opportunity that comes my way! Please contact me at [benjmok@gmail.com](benjmok@gmail.com) if you have any questions. My hobbies include, camping and being in nature, boxing, brazilian jiu-jitsu/wrestling, and teaching myself photography. Thank you for visiting my website and GO RAIDERS!
@@ -9,6 +7,7 @@ Hello everyone, my name is Ben. I am currently a 4th year Statistics major Econo
 ### [San Francisco Community Analysis](https://benon33.github.io/benmok/Assignment%206/)
 
 This project involves the use of a relational database management systems that carries data about San Francisco.  An RDBMS allows easy access to large amounts of data at any given time.  I use _Python_ and _SQL_ to read and analyze the data. I then make use of the data by depicting graphical representations of different relational factors in San Francisco to answer  specific questions such as: what are the most expensive areas to live in? 
+
 
 ### [Natural Language Processing: News Articles!](https://benon33.github.io/benmok/Assignment5/)
 
