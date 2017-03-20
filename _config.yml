@@ -1,7 +1,5 @@
 title: Benjamin Mok
 markdown: kramdown
 description: UC Davis 2017
-kramdown:
-   auto_ids: true
 theme: jekyll-theme-cayman
 
