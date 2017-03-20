@@ -1,8 +1,9 @@
 ---
-.banner {
-  width: 100%;
-  display: block;
 
-}
 ---
 @import "{{ site.theme }}";
+
+
+.page-header {
+  background-image: url(https://benon33.github.io/benmok/assets/css/galaxy1.jpg)
+} 
