@@ -1,6 +1,6 @@
 ## About Me
 
-Hello everyone, my name is Ben. I am currently a 4th year Statistics major Economics Minor at UC Davis. Yes, I am graduating soon and I am very excited! I am a firm believer in data science and I love how powerful and flexible data science can be. My main interests in data science include: making visual representations of data, webscraping and currently teaching myself how to train a neural network. I hope to make use of my technical skills for a future career in consulting but I like to stay open to anything any opportunity that comes my way! Please contact me at [benjmok@gmail.com](benjmok@gmail.com) if you have any questions. Thank you for visiting my website!
+Hello everyone, my name is Ben. I am currently a 4th year Statistics major Economics Minor at UC Davis. Yes, I am graduating soon and I am very excited! I am a firm believer in data science and I love how powerful and flexible data science can be. My main interests in data science include: making visual representations of data, webscraping and currently teaching myself how to train a neural network. I hope to make use of my technical skills for a future career in consulting but I like to stay open to anything or any opportunity that comes my way! Please contact me at [benjmok@gmail.com](benjmok@gmail.com) if you have any questions. My hobbies include, camping and being in nature, boxing, brazilian jiu-jitsu/wrestling, and teaching myself photography.  Thank you for visiting my website!
 
 ## Projects!
 
@@ -23,4 +23,6 @@ Here I mathematically break down and restructure the gradients of a picture of a
 Utilizing the USDA API, I scraped for nutrition information on different types of food.  First, I access the API and create multiple functions that search for different types of fruits and vegetables for me. Next, I retrieve JSON elements from those searches and input them into a dataframe.  Then, I create a mathematical model to accurately represent the total nutritional value that a food might have.  I then visualized the relationships between nutritional values and different factors to gain a better understanding of underlying food prices.
 
 
-sta 141b project link
+### [Final Project]
+
+I collaborated with my group mates on a final project for our web technologies in data science class. We decided to put a spin on our final by mimicking the thought processes of consultants.  We analysed the data and acted as consultants to an advertising firm. We found some pretty effective ways to efficiently allocating capital into different areas and types of advertising.   
