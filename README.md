@@ -20,6 +20,6 @@ Here I mathematically break down and restructure the gradients of a picture of a
 Utilizing the USDA API, I scraped for nutrition information on different types of food.  First, I access the API and create multiple functions that search for different types of fruits and vegetables for me. Next, I retrieve JSON elements from those searches and input them into a dataframe.  Then, I create a mathematical model to accurately represent the total nutritional value that a food might have.  I then visualized the relationships between nutritional values and different factors to gain a better understanding of underlying food prices.
 
 
-### [Final Project]
+### [Final Project](https://benon33.github.io/benmok/finalproject/)
 
 I collaborated with my group mates on a final project for our web technologies in data science class. We decided to put a spin on our final by mimicking the thought processes of consultants.  We analysed the data and acted as consultants to an advertising firm. We found some pretty effective ways to efficiently allocating capital into different areas and types of advertising.   
