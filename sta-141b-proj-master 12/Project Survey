@@ -1,0 +1,28 @@
+List the members of your group.
+ * Eugene Hong
+ * Benjamin Mok
+ * Jessica Tsoi
+ * Matthew Lee
+
+Project Title: It's Lit: A Comprehensive Study on Youngsters
+
+Dataset: 
+Url:
+
+Description: Our dataset consists of data from a survey taken from 1010 Slovakians aged between 15 and 30 in the year 2013. The dataset contains the responses of the subjects on various preferences and other things such as habits and traits. All responses are ranked by subjects from 1-5 and the demographics are categorical variables.  
+
+Possible Questions:
+  * What is the relationship between student spending and overall health habits?
+  * Is there a possible relationship between phobias and gender?
+  * Is there a relationship between education and health habits?  (ML)
+  * Is there a relationship between personality traits and music tastes?
+      -e.g. Do people who tend to have temper issues enjoy metal/ hard rock music?
+  
+Plan of attack:
+* Make linear models and regress factors on chosen categories of interest. We would also have to make dummy variables out of the categorical variables in order to run a linear regression. 
+* From our models and data, we would then carefully select visualization methods to efficiently analyze and interpret our data. 
+* We also plan to use data plotting packages such as Seaform, Pandas and Matplotlib to better visualize our data. 
+URL for your github: https://github.com/ehkhong/sta-141b-proj
+
+
+  
