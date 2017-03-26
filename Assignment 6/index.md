@@ -23,7 +23,7 @@ Shapefiles for San Francisco Neighborhoods are available [here](https://data.sfg
 
 ### NOTE: I deleted a lot of cells due to redundancy for when I looked at the correct column names for each df etc...
 
-__Exercise 1.1.__ Which mobile food vendor(s) sells at the most locations?
+Which mobile food vendor(s) sells at the most locations?
 
 
 ```python
@@ -94,17 +94,6 @@ print 'May Catering serves the most locations at 52 locations!'
     May Catering serves the most locations at 52 locations!
 
 
-__Exercise 1.2.__ Ask and use the database to analyze 5 questions about San Francisco. For each question, write at least 150 words and support your answer with plots. Make a map for at least 2 of the 5 questions.
-
-You should try to come up with some questions on your own, but these are examples of reasonable questions:
-
-* Which parts of the city are the most and least expensive?
-* Which parts of the city are the most dangerous (and at what times)?
-* Are noise complaints and mobile food vendors related?
-* What are the best times and places to find food trucks?
-* Is there a relationship between housing prices and any of the other tables?
-
-Please make sure to clearly state each of your questions in your submission.
 
 
 ```python
