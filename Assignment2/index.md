@@ -63,7 +63,7 @@ def as_image(x):
     return Image.fromarray(np.uint8(x))
 ```
 
-__Exercise 1.1.__ How many dimensions does the `cat` array have? What does each dimension represent?
+How many dimensions does the `cat` array have? What does each dimension represent?
 
 
 ```python
@@ -81,7 +81,7 @@ n = pix * 3 # amount of numbers
 
  The `cat` array has __3__ dimensions and each dimension represents a color component of the array. The first dimension is the __red__ component, second dimension represents the __green__, and the third dimension represents the __blue__.
 
-__Exercise 1.2.__ Use `.copy()` to copy the cat array to a new variable. Swap the green and blue color channels in the copy. Display the result.
+Use `.copy()` to copy the cat array to a new variable. Swap the green and blue color channels in the copy. Display the result.
 
 
 ```python
@@ -104,12 +104,11 @@ as_image(new_cat) # call as_image function
 ![png](output_12_0.png)
 
 
-
-__Exercise 1.3.__ Why is `.copy()` necessary in exercise 1.2? What happens if you don't use `.copy()`?
+What happens if you don't use `.copy()`?
 
 I think __.copy()__ is necessary here for 1.2 because it allows us to manipulate the photo without tampering with the  original components of the original photo. If I did not use __.copy()__ then the real photo would have been manipulated and it would be inconvenient to access the original photo. Another reason for this is because in python numpy module, initializing an entire component of a certain array would change that component entirely within the array entirely, and in this case I don't want that since I want to swap green and blue. If I had done so without copy: say I changed blue to green first, then I couldn't change green to blue because blue is already green!
 
-__Exercise 1.4.__ Flip the blue color channel from left to right. Display the resulting image. _Hint: see the NumPy documentation on array manipulation routines._
+Flip the blue color channel from left to right. Display the resulting image. _Hint: see the NumPy documentation on array manipulation routines._
 
 
 ```python
