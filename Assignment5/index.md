@@ -7,7 +7,7 @@ The Aggie is organized by category into article lists. For example, there's a [C
 
 The goal of exercises 1.1 - 1.3 is to scrape articles from the Aggie for analysis in exercise 1.4.
 
-__Exercise 1.1.__ Write a function that extracts all of the links to articles in an Aggie article list. The function should:
+Write a function that extracts all of the links to articles in an Aggie article list. The function should:
 
 * Have a parameter `url` for the URL of the article list.
 
@@ -15,9 +15,6 @@ __Exercise 1.1.__ Write a function that extracts all of the links to articles in
 
 * Return a list of aricle URLs (each URL should be a string).
 
-Test your function on 2-3 different categories to make sure it works.
-
-Hints:
 
 * Be polite to The Aggie and save time by setting up [requests_cache](https://pypi.python.org/pypi/requests-cache) before you write your function.
 
@@ -119,7 +116,7 @@ extract_url("https://theaggie.org/arts/", 4)
 
 
 
-__Exercise 1.2.__ Write a function that extracts the title, text, and author of an Aggie article. The function should:
+__Write a function that extracts the title, text, and author of an Aggie article. The function should:
 
 * Have a parameter `url` for the URL of the article.
 
@@ -191,7 +188,7 @@ extracts('https://theaggie.org/2017/01/12/police-logs-7/')
 
 
 
-__Exercise 1.3.__ Use your functions from exercises 1.1 and 1.2 to get a data frame of 60 [Campus News](https://theaggie.org/campus/) articles and a data frame of 60 [City News](https://theaggie.org/city/) articles. Add a column to each that indicates the category, then combine them into one big data frame.
+__Use your functions from exercises 1.1 and 1.2 to get a data frame of 60 [Campus News](https://theaggie.org/campus/) articles and a data frame of 60 [City News](https://theaggie.org/city/) articles. Add a column to each that indicates the category, then combine them into one big data frame.
 
 The "text" column of this data frame will be your corpus for natural language processing in exercise 1.4.
 
@@ -754,7 +751,7 @@ ayedf[98:99]
 
 
 
-__Exercise 1.4.__ Use the Aggie corpus to answer the following questions. Use plots to support your analysis.
+Use the Aggie corpus to answer the following questions. Use plots to support your analysis.
 
 * What topics does the Aggie cover the most? Do city articles typically cover different topics than campus articles?
 
